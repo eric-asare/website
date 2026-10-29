@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
+    <script src="https://kit.fontawesome.com/2786bc3471.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="{{ '/script.js' | relative_url }}"></script>
+    <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+</head>
+
+<body>
+    <div class="page">
+        <!-- Header -->
+        <header>
+            <a href="{{ '/' | relative_url }}" class="site-name">Eric Asare<span class="color">.</span></a>
+            <nav>
+                <a href="{{ '/' | relative_url }}"{% if page.nav == 'home' %} class="active"{% endif %}>Home</a>
+                <a href="{{ '/blog/' | relative_url }}"{% if page.nav == 'blog' or page.layout == 'post' %} class="active"{% endif %}>Blog</a>
+                <a href="{{ '/talks/' | relative_url }}"{% if page.nav == 'talks' %} class="active"{% endif %}>Talks</a>
+                {% include icons.html %}
+            </nav>
+        </header>
+
+        {{ content }}
+
+        <footer>
+            <p>© Eric Asare<span class="color">.</span></p>
+            {% include icons.html %}
+        </footer>
+    </div>
+</body>
+
+</html>

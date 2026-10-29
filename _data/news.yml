@@ -1,0 +1,26 @@
+# Newest first. `text` can use Markdown (links, **bold**, *italics*).
+# date: "YYYY-MM" (shown as "Aug 2026") or "YYYY" (shown as "2026").
+# Only the last `news_years` years show on the site (set in _config.yml). Older items can stay here.
+- date: "2026-08"
+  text: Started my PhD in Computer Science at **NYU** as a Global PhD student (New York & Abu Dhabi), advised by [Sarah Nadi](https://sanadlab.org/).
+
+- date: "2026"
+  text: "*All or Nothing*, on how library type annotations affect client-side errors in Python, was accepted at **ASE 2026**."
+
+- date: "2026"
+  text: Our study of how 11,021 PyPI libraries use type annotations was accepted at **MSR 2026**.
+
+- date: "2026"
+  text: "*Fast and Fleeting*, our full study of ChatGPT and students' computational thinking, was accepted at **CHASE 2026**."
+
+- date: "2025"
+  text: "*A Friend or a Foe?*, our short paper on ChatGPT and computational thinking, was accepted at **EASE 2025**."
+
+- date: "2025-02"
+  text: Joined the [SANAD Lab](https://sanadlab.org/) at NYU Abu Dhabi as a Junior Research Scientist.
+
+- date: "2024-12"
+  text: Graduated from **NYU Abu Dhabi** with a BS in Computer Science and received the NYU Founders' Day Award.
+
+- date: "2024-06"
+  text: Research assistant at the [CTED Lab](https://nyuad.nyu.edu/en/research/research-institute-centers/nyuad-cted.html), NYU Abu Dhabi.

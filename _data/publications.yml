@@ -1,0 +1,43 @@
+# Newest first.
+# thumb: first-page image in images/papers/. Leave it out to show a placeholder.
+#   Make one on a Mac with:  qlmanage -t -s 600 -o images/papers papers/NAME.pdf
+#   then rename NAME.pdf.png to NAME.png
+# pdf and doi are optional.
+- title: "All or Nothing: How Library Type Annotations Affect Client-Side Errors in Python"
+  authors: Eric Asare, Luca Di Grazia, Sarah Nadi
+  venue: ASE 2026
+  pdf: papers/ASE26.pdf
+  thumb: images/papers/ASE26.png
+  doi: https://doi.org/10.1145/3832783.3834434
+  takeaway: Only at 90% annotation coverage do we see a measurable downstream benefit, where clients run into fewer type errors. But clients only benefit when they align with the library and use type checkers themselves, which happens just 10% of the time.
+
+- title: How do third-party Python libraries use type annotations?
+  authors: Eric Asare, Sarah Nadi
+  venue: MSR 2026
+  pdf: papers/MSR26.pdf
+  thumb: images/papers/MSR26.png
+  doi: https://doi.org/10.1145/3793302.3793337
+  takeaway: Most PyPI libraries (83% of 11,021) use type annotations and rarely abandon them once adopted. But developers annotate private functions more than the public API clients actually call, so the people who would benefit most often get the least.
+
+- title: "Fast and Fleeting: Evaluating ChatGPT's Impact on Students' Computational Thinking Skills"
+  authors: May Mahmoud, Eric Asare, Nisa Shahid, Nourhan Sakr, Sarah Nadi
+  venue: CHASE 2026
+  pdf: papers/CHASE26.pdf
+  thumb: images/papers/CHASE26.png
+  doi: https://doi.org/10.1145/3794860.3794894
+  takeaway: Students with ChatGPT finished design tasks faster and found them easier, but the advantage disappeared in a retention test a week later. It acted more like a crutch than a lasting learning aid.
+
+- title: "A Friend or a Foe? Evaluating ChatGPT's Impact on Students' Computational Thinking Skills"
+  authors: May Mahmoud, Eric Asare, Nourhan Sakr, Sarah Nadi
+  venue: EASE Companion 2025
+  pdf: papers/LEARNER25.pdf
+  thumb: images/papers/LEARNER25.png
+  doi: https://doi.org/10.1145/3727967.3756830
+  takeaway: Students increasingly lean on ChatGPT, but does it help them learn to decompose problems and design abstractions, or just finish faster? This pilot set up the controlled experiment that became Fast and Fleeting.
+
+- title: Tile Size Selection Using Hill Climbing Algorithm
+  authors: Eric Asare, Riyadh Baghdadi, Muhammad Shafique
+  venue: NYU Abu Dhabi Capstone, 2024
+  pdf: papers/Capstone24.pdf
+  thumb: images/papers/Capstone24.png
+  takeaway: Hill climbing finds good loop-tiling sizes for the MLIR compiler with very little search time. It is simple enough to drop into production MLIR autoschedulers.

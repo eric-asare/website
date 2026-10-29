@@ -1,0 +1,33 @@
+# The Projects section only shows on the home page when this list has entries.
+# To bring it back, remove the "#" at the start of each project line below.
+# - name: Lunch Box Tale
+#   url: https://eric-asare.github.io/lunch-box-tale/
+#   code: https://github.com/eric-asare/lunch-box-tale
+#   description: An interactive comic designed with Daniel, Dariga and Kobby.
+# - name: Pick Or Drop
+#   url: https://sarah-altowaity1.github.io/Pick-Or-Drop/
+#   code: https://github.com/sarah-altowaity1/Pick-Or-Drop
+#   description: An interactive video film designed with Sarah, Ingy and Genie.
+# - name: Tiger Grandma
+#   url: https://aylasacic.github.io/Tiger-Grandma.github.io/
+#   code: https://github.com/aylasacic/Tiger-Grandma.github.io
+#   description: A Taiwanese folktale created with Genie, Swostik and Ajla.
+# - name: Playful
+#   url: https://eric-asare.github.io/playful/
+#   code: https://github.com/eric-asare/playful
+#   description: A 30 Minute Film Festival project about the NYU playground.
+# - name: Grab Food Game
+#   url: https://vimeo.com/630891621
+#   code: https://github.com/eric-asare/grab-food-game
+#   description: An object-oriented game built in Java with Processing.
+# - name: get-lyrics
+#   url: https://github.com/eric-asare/get-lyrics
+#   description: A lyrics search PWA for desktop and mobile.
+# - name: MemoIce
+#   url: https://memo-ice-game.glitch.me/
+#   code: https://github.com/eric-asare/ConnectionsLab/tree/main/week10/memoICE
+#   description: A memory game to train the brain and build friendships.
+# - name: CollabDraw
+#   url: https://collabdraw-play.glitch.me/
+#   code: https://github.com/eric-asare/memo-Progress7
+#   description: A collaborative drawing app for making art against the clock.

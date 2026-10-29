@@ -1,0 +1,45 @@
+---
+layout: default
+title: Talks
+nav: talks
+permalink: /talks/
+published: true
+---
+<!-- Talks: edit _data/talks.yml -->
+<section>
+    <h2>Talks<span class="color">.</span></h2>
+    {% if site.data.talks.size > 0 %}
+    <ul class="list">
+        {% for talk in site.data.talks %}
+        {% assign parts = talk.date | split: "-" %}
+        {% if parts.size > 1 %}{% assign talk_date = talk.date | append: "-01" | date: "%b %Y" %}{% else %}{% assign talk_date = parts[0] %}{% endif %}
+        {% if talk.slides %}{% assign slides_link = talk.slides | relative_url %}{% else %}{% assign slides_link = talk.slides_embed %}{% endif %}
+        {% if talk.youtube %}{% assign video_link = "https://www.youtube.com/watch?v=" | append: talk.youtube %}{% elsif talk.vimeo %}{% assign video_link = "https://vimeo.com/" | append: talk.vimeo %}{% else %}{% assign video_link = nil %}{% endif %}
+        <li class="talk">
+            <p class="paper-title">{{ talk.title }}</p>
+            <p class="venue">{{ talk.event }}{% if talk.location %} · {{ talk.location }}{% endif %} · {{ talk_date }}</p>
+            {% if slides_link or video_link %}
+            <div class="talk-media">
+                {% if talk.youtube %}
+                <iframe class="embed" src="https://www.youtube-nocookie.com/embed/{{ talk.youtube }}" title="Video: {{ talk.title }}" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
+                {% elsif talk.vimeo %}
+                <iframe class="embed" src="https://player.vimeo.com/video/{{ talk.vimeo }}" title="Video: {{ talk.title }}" loading="lazy" allow="fullscreen; picture-in-picture" allowfullscreen></iframe>
+                {% endif %}
+                {% if talk.slides %}
+                <iframe class="embed" src="{{ slides_link }}#view=FitH" title="Slides: {{ talk.title }}" loading="lazy"></iframe>
+                {% elsif talk.slides_embed %}
+                <iframe class="embed" src="{{ slides_link }}" title="Slides: {{ talk.title }}" loading="lazy" allowfullscreen></iframe>
+                {% endif %}
+            </div>
+            <p class="paper-links">
+                {% if slides_link %}<a href="{{ slides_link }}" target="_blank">Slides</a>{% endif %}
+                {% if video_link %}<a href="{{ video_link }}" target="_blank">Video</a>{% endif %}
+            </p>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p class="muted">No talks yet.</p>
+    {% endif %}
+</section>

@@ -1,0 +1,19 @@
+---
+layout: default
+title: Blog
+nav: blog
+permalink: /blog/
+published: true
+---
+<section>
+    <h2>Blog<span class="color">.</span></h2>
+    {% if site.posts.size > 0 %}
+    <ul class="list post-list">
+        {% for post in site.posts %}
+        <li><span class="date">{{ post.date | date: "%b %-d, %Y" }}</span><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p class="muted">No posts yet.</p>
+    {% endif %}
+</section>

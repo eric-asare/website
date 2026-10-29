@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="{{ '/images/favicon.png' | relative_url }}">
+    <link rel="apple-touch-icon" href="{{ '/images/favicon.png' | relative_url }}">
     <link rel="stylesheet" href="{{ '/style.css' | relative_url }}">
     <script src="https://kit.fontawesome.com/2786bc3471.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,6 +25,7 @@
                 <a href="{{ '/blog/' | relative_url }}"{% if page.nav == 'blog' or page.layout == 'post' %} class="active"{% endif %}>Blog</a>
                 <a href="{{ '/talks/' | relative_url }}"{% if page.nav == 'talks' %} class="active"{% endif %}>Talks</a>
                 {% include icons.html %}
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark mode" title="Toggle theme"><i class="fa-solid fa-sun"></i></button>
             </nav>
         </header>
 

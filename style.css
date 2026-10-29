@@ -10,6 +10,21 @@
     --secondary-color: #262626;
     --muted: #a0a0a0;
     --border: #262626;
+    --bg: #000;
+    --text: #fff;
+    --code-bg: #111;
+    color-scheme: dark;
+}
+
+/* Soft light theme: warm off-white instead of stark white */
+:root[data-theme="light"] {
+    --primary-color: rgb(80, 80, 225);
+    --muted: #5f5f5f;
+    --border: #e4e4e0;
+    --bg: #fafaf8;
+    --text: #1f1f1f;
+    --code-bg: #f0f0ed;
+    color-scheme: light;
 }
 
 ::selection {
@@ -22,8 +37,9 @@ html {
 }
 
 body {
-    background-color: #000;
-    color: white;
+    background-color: var(--bg);
+    color: var(--text);
+    transition: background-color 0.2s, color 0.2s;
     font-size: 1rem;
     line-height: 1.7;
 }
@@ -46,7 +62,7 @@ body {
 }
 
 a {
-    color: white;
+    color: var(--text);
     text-decoration: underline;
     text-decoration-color: var(--primary-color);
     text-underline-offset: 3px;
@@ -88,7 +104,7 @@ header nav a {
 
 header nav a:hover,
 header nav a.active {
-    color: white;
+    color: var(--text);
 }
 
 header nav a.active::after {
@@ -115,6 +131,19 @@ header nav a.active::after {
 .icons .cv-link {
     font-size: 0.95rem;
     font-weight: 500;
+}
+
+.theme-toggle {
+    border: none;
+    padding: 0;
+    color: var(--muted);
+    font-size: 1.1rem;
+    line-height: 1;
+}
+
+.theme-toggle:hover {
+    background-color: transparent;
+    color: var(--primary-color);
 }
 
 
@@ -192,6 +221,7 @@ ul.bullets li::marker {
 }
 
 .paper {
+    scroll-margin-top: 24px;
     display: grid;
     grid-template-columns: 120px 1fr;
     gap: 24px;
@@ -318,7 +348,7 @@ ul.bullets li::marker {
 
 button {
     background-color: transparent;
-    color: white;
+    color: var(--text);
     border: 1px solid var(--primary-color);
     padding: 2px 8px;
     border-radius: 20px;
@@ -389,7 +419,7 @@ article h2 {
 }
 
 article h3 {
-    color: white;
+    color: var(--text);
     margin: 24px 0 8px;
 }
 
@@ -415,13 +445,13 @@ article code * {
 
 article code {
     font-size: 0.9em;
-    background: #111;
+    background: var(--code-bg);
     padding: 2px 6px;
     border-radius: 4px;
 }
 
 article pre {
-    background: #111;
+    background: var(--code-bg);
     border: 1px solid var(--border);
     border-radius: 6px;
     padding: 16px;

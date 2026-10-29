@@ -17,7 +17,7 @@
   pdf: papers/MSR26.pdf
   thumb: images/papers/MSR26.png
   doi: https://doi.org/10.1145/3793302.3793337
-  takeaway: Most PyPI libraries (83% of 11,021) use type annotations and rarely abandon them once adopted. But developers annotate private functions more than the public API clients actually call, so the people who would benefit most often get the least.
+  takeaway: Most PyPI libraries (83% of 11,021) use type annotations and rarely abandon them once adopted. But developers annotate private functions more than the public API clients actually call.
 
 - title: "Fast and Fleeting: Evaluating ChatGPT's Impact on Students' Computational Thinking Skills"
   authors: May Mahmoud, Eric Asare, Nisa Shahid, Nourhan Sakr, Sarah Nadi

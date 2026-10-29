@@ -52,7 +52,7 @@ nav: home
     <ul class="list papers">
         {% for paper in site.data.publications %}
         {% if paper.pdf %}{% assign link = paper.pdf | relative_url %}{% else %}{% assign link = paper.doi %}{% endif %}
-        <li class="paper">
+        <li class="paper"{% if paper.pdf %} id="{{ paper.pdf | split: "/" | last | remove: ".pdf" }}"{% endif %}>
             <a href="{{ link }}" target="_blank" class="paper-thumb" aria-label="Open {{ paper.title }}">
                 {% if paper.thumb %}
                 <img src="{{ paper.thumb | relative_url }}" alt="First page of {{ paper.title }}" loading="lazy">

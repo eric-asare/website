@@ -1,4 +1,36 @@
+// Apply the saved theme right away (this script loads in <head>) so light mode doesn't flash dark
+try {
+    if (localStorage.getItem("theme") === "light") {
+        document.documentElement.dataset.theme = "light";
+    }
+} catch (e) {}
+
 document.addEventListener("DOMContentLoaded", function() {
+    // ---------------- Theme Toggle ------------------
+    var themeToggle = document.getElementById("theme-toggle");
+
+    function updateThemeIcon() {
+        var isLight = document.documentElement.dataset.theme === "light";
+        // Show the theme you'd switch to
+        themeToggle.querySelector("i").className = isLight ? "fa-solid fa-moon" : "fa-solid fa-sun";
+    }
+
+    if (themeToggle) {
+        updateThemeIcon();
+        themeToggle.addEventListener("click", function() {
+            var isLight = document.documentElement.dataset.theme === "light";
+            if (isLight) {
+                delete document.documentElement.dataset.theme;
+            } else {
+                document.documentElement.dataset.theme = "light";
+            }
+            try {
+                localStorage.setItem("theme", isLight ? "dark" : "light");
+            } catch (e) {}
+            updateThemeIcon();
+        });
+    }
+
     // ---------------- Typing Animation ------------------
     var typingElement = document.querySelector(".typing-text");
     // Phrases come from _data/typing.yml (rendered into the data-phrases attribute)

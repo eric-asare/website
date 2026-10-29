@@ -1,0 +1,21 @@
+# Newest first. title, event and date are required.
+# date: "YYYY-MM" (shown as "Nov 2026") or "YYYY" (shown as "2026").
+# Optional:
+#   location: City, Country
+#   slides: talks/NAME.pdf       PDF in talks/, previewed on the page
+#   slides_embed: https://...    OR an embed link (Google Slides "Publish to web" > Embed, Speaker Deck, SlideShare)
+#   youtube: VIDEO_ID            the part after "watch?v=" in a YouTube link
+#   vimeo: VIDEO_ID              the number at the end of a Vimeo link
+#
+# - title: "All or Nothing: How Library Type Annotations Affect Client-Side Errors in Python"
+#   event: ASE 2026
+#   location: Munich, Germany
+#   date: "2026-11"
+#   slides: talks/ASE26.pdf
+#   youtube: VIDEO_ID
+
+- title: "All or Nothing: How Library Type Annotations Affect Client-Side Errors in Python"
+  event: ASE 2026
+  location: Munich, Germany
+  date: "2026-10"
+  slides: talks/ASE26.pdf

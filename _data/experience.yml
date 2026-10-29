@@ -1,0 +1,22 @@
+# The Experience section only shows on the home page when this file has entries.
+# To bring it back, remove the "#" at the start of each line below.
+# research:
+#   - role: Junior Research Scientist
+#     org: SANAD Lab, NYU Abu Dhabi
+#     url: https://sanadlab.org/
+#     dates: Feb 2025 – Aug 2026
+#   - role: Research Assistant
+#     org: CTED Lab, NYU Abu Dhabi
+#     url: https://nyuad.nyu.edu/en/research/research-institute-centers/nyuad-cted.html
+#     dates: May 2024 – Aug 2024
+
+# industry:
+#   - role: Software Engineer Intern
+#     org: Qlub.io
+#     dates: Summer 2023, Dubai
+#   - role: Software Engineer Intern
+#     org: Kehillah Global
+#     dates: Fall 2022, Remote
+#   - role: Software Engineer Intern
+#     org: Google
+#     dates: Summer 2022, London

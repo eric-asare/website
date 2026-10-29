@@ -1,0 +1,9 @@
+---
+layout: default
+---
+<article>
+    <h1>{{ page.title }}<span class="color">.</span></h1>
+    <span class="date">{{ page.date | date: "%b %-d, %Y" }}</span>
+    {{ content }}
+    <p class="back"><a href="{{ '/blog/' | relative_url }}">← All posts</a></p>
+</article>

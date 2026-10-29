@@ -1,0 +1,25 @@
+title: Eric Asare
+url: https://www.ericasare.org
+email: eric.asare@nyu.edu
+scholar: https://scholar.google.com/citations?user=LOLnjmkAAAAJ&hl=en
+github: https://github.com/eric-asare
+linkedin: https://www.linkedin.com/in/eric-asare/
+
+# How many years of news to show on the home page.
+news_years: 2
+
+markdown: kramdown
+permalink: /blog/:title/
+
+defaults:
+  - scope:
+      type: posts
+    values:
+      layout: post
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - .bundle
